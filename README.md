@@ -85,7 +85,7 @@ Jede dieser Annahmen hebt ein Folgestück der Linie auf:
 |---|---|
 | Geduldige Lkw, unbegrenzter Warteraum | [Erlang A](https://github.com/sebastian-hanisch/erlang-a-demo), [Erlang B](https://github.com/sebastian-hanisch/erlang-b-demo) |
 | Konstante Ankunftsrate | [Zeitvariable Ankünfte](https://github.com/sebastian-hanisch/time-varying-arrivals-demo) |
-| Ein Gate | Jackson-Netze |
+| Ein Gate | [Jackson-Netze](https://github.com/sebastian-hanisch/jackson-network-demo) |
 
 Kein Folgestück: unterschiedliche Dauern und Wartekosten je Klasse, mehr als zwei Klassen.
 

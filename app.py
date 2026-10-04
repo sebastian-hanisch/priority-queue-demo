@@ -250,7 +250,7 @@ st.markdown(
 | **Alle Klassen verlieren gleich viel durch Warten** | Bei unterschiedlichen Wartekosten ist die beste Rangfolge die nach Kosten je Dauer (cμ-Regel), nicht die nach Eile. | kein Folgestück |
 | **Geduldige Lkw, unbegrenzter Warteraum** | Mit Abwanderung oder begrenztem Aufstellplatz gehen vor allem die Lkw der unteren Klasse verloren. | **[Erlang A](https://sebastianhanisch-erlang-a-demo.streamlit.app/)** und **[Erlang B](https://sebastianhanisch-erlang-b-demo.streamlit.app/)** |
 | **Konstante Ankunftsrate** | Bei Wellen wechseln die Anteile der Klassen über den Tag; die Vorfahrt wirkt in der Spitze am stärksten. | **[Zeitvariable Ankünfte](https://sebastianhanisch-time-varying-arrivals-demo.streamlit.app/)** |
-| **Ein Gate** | In Netzen läuft ein Lkw durch mehrere Stationen; Vorfahrt an einer Station verändert den Strom zur nächsten. | **Jackson-Netze** (Folgestück) |
+| **Ein Gate** | In Netzen läuft ein Lkw durch mehrere Stationen; Vorfahrt an einer Station verändert den Strom zur nächsten. | **[Jackson-Netze](https://sebastianhanisch-jackson-network-demo.streamlit.app/)** |
 | **Die Kette gilt nur für exponentielle Dauer** | Bei anderer Streuung ist (n₁, n₂) kein Markov-Zustand mehr; dort bleiben Formel (eine Spur) und Simulation. | kein Folgestück |
 """
 )
