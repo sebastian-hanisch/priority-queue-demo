@@ -1,5 +1,9 @@
 # Prioritätsklassen – wer darf vor? (Streamlit-Demo)
 
+**[→ Demo live ausprobieren](https://sebastianhanisch-priority-queue-demo.streamlit.app/)**
+
+---
+
 Interaktive Demo zur **Vorfahrt für eilige Lkw** am Terminal-Gate. **Elftes Stück der Konzepte-Linie „Warteschlangentheorie und Simulation“** im Portfolio von
 [Sebastian Hanisch](https://sebastianhanisch.net) (Operations Research und Machine Learning): ein Verfahren, ein wachsendes Beispiel, jedes Folgestück hebt genau eine Annahme auf.
 
@@ -66,6 +70,7 @@ Alle Zahlen stehen in `tests/test_claims.py`. Verzögerungen in Abfertigungsdaue
 
 ## Verwandte Demos im Portfolio
 
+- [`markov-queue-demo`](https://github.com/sebastian-hanisch/markov-queue-demo) (Zusatzstück: die Grundlagen der Kette, die hier zweidimensional wird).
 - [`mg1-kingman-demo`](https://github.com/sebastian-hanisch/mg1-kingman-demo) (Stück 10): eine Klasse, Pollaczek-Khinchine; hier mit zwei Klassen.
 - [`mmc-queue-demo`](https://github.com/sebastian-hanisch/mmc-queue-demo) (Stück 3): mehrere Spuren, Erlang C.
 - [`mm1-queue-demo`](https://github.com/sebastian-hanisch/mm1-queue-demo) (Stück 1): die Geburts-Sterbe-Kette einer Klasse.

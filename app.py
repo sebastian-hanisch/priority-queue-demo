@@ -255,7 +255,7 @@ st.markdown(
 """
 )
 st.caption(
-    "Verwandt im Portfolio: [mg1-kingman-demo](https://sebastianhanisch-mg1-kingman-demo.streamlit.app/) (Stück 10: eine Klasse, Pollaczek-Khinchine; hier mit zwei), "
+    "Verwandt im Portfolio: [markov-queue-demo](https://sebastianhanisch-markov-queue-demo.streamlit.app/) (Zusatzstück: die Grundlagen der Kette, die hier zweidimensional wird), [mg1-kingman-demo](https://sebastianhanisch-mg1-kingman-demo.streamlit.app/) (Stück 10: eine Klasse, Pollaczek-Khinchine; hier mit zwei), "
     "[mmc-queue-demo](https://sebastianhanisch-mmc-queue-demo.streamlit.app/) (Stück 3: mehrere Spuren, Erlang C), [mm1-queue-demo](https://sebastianhanisch-mm1-queue-demo.streamlit.app/) "
     "(Stück 1: die Geburts-Sterbe-Kette einer Klasse), [power-of-d-demo](https://sebastianhanisch-power-of-d-demo.streamlit.app/) (Stück 7: ein weiteres Gate, dessen mehrdimensionale Kette "
     "als Referenz dient) und die Hafen-Demo [truck-appointment-demo](https://sebastianhanisch-truck-appointment-demo.streamlit.app/) (Terminvergabe für Lkw)."
