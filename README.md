@@ -91,7 +91,7 @@ Kein Folgestück: unterschiedliche Dauern und Wartekosten je Klasse, mehr als zw
 
 ## Tests
 
-139 Tests, rund 45 Sekunden: Cobham und Preemptive-Resume von Hand, die geschlossenen Formeln für Gewinn und Verlust, der Erhaltungssatz, Sonderfälle (exponentielle Dauer) und Fälle ohne Formel, die Markov-Kette
+164 Tests: Orakel-Tests (`tests/test_oracle_prio.py`: Cobham und Preemptive-Resume gegen eigene Markov-Ketten mit Erlang-2- und Hyperexponential-Dauer, mehrspurig nicht unterbrechend gegen eine Kette mit der Zahl der Eiligen in Abfertigung, die Simulation gegen eine Brute-Force-Ereignisrechnung), Cobham und Preemptive-Resume von Hand, die geschlossenen Formeln für Gewinn und Verlust, der Erhaltungssatz, Sonderfälle (exponentielle Dauer) und Fälle ohne Formel, die Markov-Kette
 (von Hand gelöster Dreizustands-Fall, Gesamtzahl gleich M/M/c, Übereinstimmung mit den Formeln, Güte der Lösung), die Simulation (Mini-Instanz für alle drei Reihenfolgen, Verdrängung von Hand, Invarianten), Simulation gegen
 Formeln und gegen die Kette, Vollständigkeit der vorgerechneten Datei, Presets und Permalink, Diagramme (gesperrte Achsen), AppTest-Rauchtests mit festem Würfel-Seed, der Smoke-Test der Portfolio-Vorlage, ein Quelltext-Test gegen
 Satz-Komma-Fehler und `test_claims.py` für jede Zahl dieser README.
