@@ -23,7 +23,7 @@ Wie viel gewinnen die Eiligen, wie viel zahlen die anderen, wann lohnt sich Unte
   (Preemptive-Resume): Tₖ = 1/(1 − σₖ₋₁) + Rₖ/((1 − σₖ₋₁)(1 − σₖ)), Verzögerung Tₖ − 1. Mehrere Spuren, exponentielle Dauer: Erlang C mit dem Cobham-Faktor; unterbrechend sieht Klasse 1 ein eigenes M/M/c
   mit Auslastung pρ, das Gesamtmittel ist das von M/M/c, Klasse 2 folgt aus dem Erhaltungssatz. Für mehrere Spuren mit anderer Dauer gibt es keine Formel (die App zeigt dann nur die Simulation).
 - **Markov-Kette** (`prio_chain.py`): Bei exponentieller Dauer ist der Zustand (n₁, n₂) = Zahl der Eiligen und der Standard-Lkw im System (bei nicht unterbrechender Vorfahrt und einer Spur zusätzlich die Klasse in
-  Abfertigung). Das Gleichgewicht πQ = 0 wird als dünn besetztes lineares System über alle Zustände gelöst (Grenze n₁ + n₂ ≤ N aus dem Schwanz von M/M/c); die Verzögerung folgt nach Little aus E[nₖ]/λₖ − 1.
+  Abfertigung). Das Gleichgewicht πQ = 0 wird als dünn besetztes lineares System über alle Zustände gelöst (Grenze n₁ + n₂ ≤ N aus dem Tail von M/M/c); die Verzögerung folgt nach Little aus E[nₖ]/λₖ − 1.
 - **Simulation** (`prio_simulation.py`): Ereignisse für Ankunft und Abfertigungsende, zwei Schlangen, bei unterbrechender Vorfahrt verdrängt ein Eiliger den zuletzt gestarteten Standard-Lkw, der mit seiner Restdauer
   an den Kopf der Standard-Schlange zurückkehrt; SplitMix64 mit getrennten Strömen (Zwischenankunft, Dauer, Klassenwahl); die ersten 5 % der Lkw werden nicht ausgewertet, alle werden zu Ende bedient.
 - **Gegenproben:** (1) von Hand verfolgte Mini-Instanz mit vier Lkw für alle drei Reihenfolgen (Verzögerungen 2.3 / 2.567 / 2.5 nicht unterbrechend, 3.3 / 2.233 / 2.5 FIFO, 0 / 2.9 / 2.175 unterbrechend); (2) die Verdrängung
@@ -53,7 +53,7 @@ Alle Zahlen stehen in `tests/test_claims.py`. Verzögerungen in Abfertigungsdaue
 - **Geschlossene Formeln statt Tabellen.** Die Vorab-Messreihe zeigte Gewinn und Verlust nur als Zahlen (8.2-fach, +22 % bei 90 %). Gerechnet ergibt sich, dass sie bei einer Spur **nicht von der Streuung der Dauer abhängen** und als
   (1 − pρ)/(1 − ρ) bzw. pρ/(1 − pρ) geschlossen angebbar sind; die Studie bestätigt das für cs² = 0, 1 und 4.
 - **Der Vergleich „Unterbrechen spart bei streuender Dauer“ ist nur gegen die Formel sauber.** Die Simulation einer Zelle (cs² = 4, Auslastung 80 %) zeigt −5.8 % gegenüber dem FIFO-Lauf derselben Zelle, die Formel nur −2.3 %: der
-  FIFO-Lauf liegt dort selbst 2 % über seiner Formel (schwerer Schwanz). Die README nennt deshalb die Formelwerte.
+  FIFO-Lauf liegt dort selbst 2 % über seiner Formel (schwerer Tail). Die README nennt deshalb die Formelwerte.
 - **Vier Spuren, unterbrechend:** Der Gewinn der Eiligen in „Faktor“ (405- bis 953-fach) ist wegen Wartezeiten nahe null bedeutungslos; die App und diese README nennen dafür die absolute Wartezeit (unter 0.01 min).
 - **Der Standardlauf der App liegt für die Standard-Lkw 9 % über der Formel** (150 000 Lkw bei 90 % Auslastung), weil bei hoher Last die Verzögerung der großen Klasse stark streut; die Studie mittelt sechs Läufe à 1 000 000.
 

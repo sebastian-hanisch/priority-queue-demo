@@ -6,7 +6,7 @@ ist (n₁, n₂) allein ein Markov-Zustand.
 
 **Nicht unterbrechende Vorfahrt** (eine Spur): zusätzlich die Klasse s des Lkw in Abfertigung (0 = leer). Wird die Spur frei, kommt der nächste Eilige, sonst der nächste Standard-Lkw dran.
 
-Die Zahl im System n₁ + n₂ ist in beiden Fällen die Geburts-Sterbe-Kette von M/M/c; deshalb genügt die Grenze n₁ + n₂ ≤ N mit N aus dem Schwanz von M/M/c.
+Die Zahl im System n₁ + n₂ ist in beiden Fällen die Geburts-Sterbe-Kette von M/M/c; deshalb genügt die Grenze n₁ + n₂ ≤ N mit N aus dem Tail von M/M/c.
 Das Gleichgewicht ist die Lösung von πQ = 0 mit Σπ = 1 (dünn besetztes lineares System, scipy). Mittlere Verzögerung je Klasse nach Little: E[n_k]/λ_k − 1."""
 
 import math
@@ -48,7 +48,7 @@ class ChainResult:
 
 
 def truncation(c, rho, tail=CHAIN_TAIL):
-    """Grenze N für n₁ + n₂: c plus so viele Plätze, dass der Geometrie-Schwanz ρ^k unter `tail` liegt (M/M/c fällt ab c wie ρ^k), plus Reserve."""
+    """Grenze N für n₁ + n₂: c plus so viele Plätze, dass der Geometrie-Tail ρ^k unter `tail` liegt (M/M/c fällt ab c wie ρ^k), plus Reserve."""
     return c + int(math.ceil(math.log(tail) / math.log(rho))) + 5
 
 
